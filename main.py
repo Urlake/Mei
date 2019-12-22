@@ -1,23 +1,34 @@
-resps = {
-    "oi": "Oi :3",
-    "olá": "Oi :3",
-    "ola": "Oi :3",
-    "salve": "Oi :3",
-    "eae": "Oi :3",
-    "oscar": "Oscar!? Esse nome eh familiar, ok isso foi bem avulso...",
-    "você é legal": "vlw <3",
-    "você eh legal": "vlw <3",
-    "voce é legal": "vlw <3",
-    "voce eh legal": "vlw <3",
-    "vc é legal": "vlw <3",
-    "vc eh legal": "vlw <3",
+perg = {
+    "oi": "1",
+    "oie": "1",
+    "olá": "1",
+    "ola": "1",
+    "bom dia": "2",
+    "dia bom": "2",
+    "boa tarde": "4",
+    "tarde boa": "4",
+    "boa noite": "8",
+    "noite boa": "8"
+}
+
+resp = {
+    "1": "Oie ^^",
+    "2": "Bom Dia",
+    "3": "Oi, Bom Dia",
+    "4": "Boa Tarde",
+    "5": "Oi, Boa Tarde",
+    "8": "Boa Noite",
+    "9": "Oi, Boa Noite",
 }
 
 while True:
-    user = input('\nVocê: ').lower()
-    try: 
-        if resps[user]:
-            print('\nMei: ' + resps[user])
+    user = input('Você: ')
+    num = 0
+    for i in perg:
+        if i in user:
+            num += int(perg[i])
+    try:
+        print('Mei: ' + resp[str(num)])
     except:
-        print('\nMei: Eu não Entendi ^^\'')
+        print('Mei: Eu não Entendi')
         continue
