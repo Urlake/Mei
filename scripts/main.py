@@ -22,13 +22,13 @@ resp = {
 }
 
 while True:
-    user = input('Você: ')
+    user = input('\nVocê: ')
     num = 0
     for i in perg:
         if i in user:
             num += int(perg[i])
     try:
-        print('Mei: ' + resp[str(num)])
+        print('\nMei: ' + resp[str(num)])
     except:
-        print('Mei: Eu não Entendi')
+        print('\nMei: Eu não Entendi')
         continue
