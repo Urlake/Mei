@@ -12,7 +12,7 @@ perg = {
 }
 
 resp = {
-    "1": "Oie ^^",
+    "1": "Oie :3",
     "2": "Bom Dia",
     "3": "Oi, Bom Dia",
     "4": "Boa Tarde",
